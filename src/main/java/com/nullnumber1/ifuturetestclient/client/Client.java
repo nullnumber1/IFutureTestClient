@@ -17,14 +17,9 @@ import java.util.concurrent.Executors;
 
 import static java.lang.Thread.sleep;
 
-/**
- * Simultaneously start sending competitive read and write requests to server
- */
-
 @Component
 public class Client {
     @Value("${server.port}")
-    private String host;
     private final ConfigReader configReader;
 
     @Autowired
