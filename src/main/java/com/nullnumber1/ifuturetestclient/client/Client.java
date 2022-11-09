@@ -19,7 +19,6 @@ import static java.lang.Thread.sleep;
 
 @Component
 public class Client {
-    @Value("${server.port}")
     private final ConfigReader configReader;
 
     @Autowired
